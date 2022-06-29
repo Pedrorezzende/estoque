@@ -1,0 +1,73 @@
+.product-app-container {
+  width: 100%;
+  height: 100vh;
+  border-radius: 15px;
+  
+}
+.product-app-wrapper {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  line-height: 3;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.form {
+  display: grid;
+  grid-gap: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+.form input[type="text"],
+.form input[type="number"] {
+  width: 20vw;
+  height: 7vh;
+  border-radius: 15px;
+  padding-left: 10px;
+  outline: none;
+  background-attachment: fixed;
+}
+.button {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.button button {
+
+  height: inherit;
+  border-left: none;
+  border-radius: 15px;
+  outline: none;
+}
+.table-wrapper {
+  width: 70vw;
+  height: max-content;
+  margin-top: 10px;
+  border: 3px solid rgb(0, 9, 36);
+  /* overflow-y: scroll; */
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.table {
+  /* width: 68.6vw; */
+  width: 70vw;
+  /* height: 70vh; */
+}
+th,
+td {
+  border: 2px solid;
+}
+thead tr th {
+  color: #000000;
+}
+tbody tr td {
+  text-align: center;
+  color: #000000;
+}

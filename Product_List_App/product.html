@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Product list app</title>
+        <link rel="stylesheet" href="./product.css"/>
+    </head>
+    <body>
+        
+        <div class="product-app-container">
+            <div class="product-app-wrapper">
+                <form action="javascript:;" class="form" id="form">
+                    <input 
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Nome"
+                        required
+                    />
+                    <input
+                        type="number"
+                        name="quantity"
+                        id="quantity"
+                        placeholder="Quantidade"
+                        required
+                    />
+                    <input
+                        type="number"
+                        name="price"
+                        id="price"
+                        placeholder="Preço"
+                        required
+                    >
+                    <input
+                        type="number"
+                        name="total_price"
+                        id="total_price"
+                        placeholder="Preço Total"
+                        required
+                    />
+
+                    <div class="button">
+                        <button onclick="createItem()">Criar Item</button>
+                        <button onclick="updateItem()">Atualizar Item</button>
+                        <button onclick="deleteItem()">Excluir Item</button>
+                    </div>
+                </form>
+
+                <div class="table-wrapper">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Quantidade</th>
+                                <th>Preço</th>
+                                <th>Preço Total</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <script src="./product.js"></script>
+    </body>
+</html>
